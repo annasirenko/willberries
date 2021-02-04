@@ -1,0 +1,51 @@
+.slider{
+    position: relative;
+    &__nav{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+        z-index: 3;
+        & button{
+            background-color: transparent;
+            cursor: pointer;
+            border: none;
+        }
+    }
+}
+
+.label{
+  @include label;  
+}
+
+.slide{
+    padding: 8rem 0 11rem 0;
+    &-1{        
+        background: $lightblue url('../img/slide-1.png') no-repeat center right 24%;
+    }
+    &-2{       
+        background:  #e0b4d3 url('../img/slide-1.png') no-repeat center right 24%;
+    }
+    &-3{
+        background:  #b9e0b4 url('../img/slide-1.png') no-repeat center right 24%;
+
+    }
+    &__title{
+        font-size: 5.5rem;
+        line-height: 7rem;
+        @include title;
+        margin-bottom: 3.3rem;
+        margin-top: 3.3rem;
+        
+    }
+    &__desc{
+        font-size: 1.8rem;
+        color: $text;
+        line-height: 3rem;
+        margin-bottom: 4.8rem
+
+    }
+
+   
+}
+

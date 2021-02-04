@@ -1,0 +1,56 @@
+.arrival {
+    padding-bottom: 7rem;
+    &__title {
+        font-size: 2.5rem;
+        @include title;
+    }
+
+    &__more {
+        color: $title;
+        font-weight: 900;
+    }
+
+    &__card {
+        display: block;
+        position: relative;
+        padding: 1.8rem 3.6rem 3rem;
+        transition: all .3s ease-in-out;
+
+        &:hover,
+        &:focus {
+            box-shadow: 1px 8px 20px grey;
+        }
+    }
+
+    &__label {
+        position: absolute;
+        left: 18px;
+        top: 18px;
+        @include label;
+        padding: .5rem 1.2rem;
+    }
+
+    &__img {
+        margin: 0 auto;
+    }
+
+    &__desc {
+        text-align: center;
+
+        &--title {
+            margin-top: 1.5rem;
+            margin-bottom: .5rem;
+            @include title;
+            font-size: 1.6rem;
+        }
+
+        &--subtitle {
+            margin-bottom: 2.1rem;
+        }
+
+        &--price {
+            @include title;
+            font-size: 1.8rem;
+        }
+    }
+}

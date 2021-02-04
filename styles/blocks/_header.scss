@@ -1,0 +1,28 @@
+header {
+    padding: 2.5rem 0;
+}
+
+.nav {
+    &__item {
+        font-weight: 900;
+        letter-spacing: 0.05rem;
+        color: #939699;
+        text-transform: uppercase;
+    }
+}
+
+.cart__btn {
+    @include btn;
+    padding: 1rem 2rem;
+    align-items: center;
+    display: flex;
+   
+    &::before {
+        content: '';
+        display: inline-block;
+        background: url('../img/icons/Cart.svg') no-repeat;
+        width: 1.8rem;
+        height: 1.7rem;
+        margin-right: 1rem;
+    }
+}

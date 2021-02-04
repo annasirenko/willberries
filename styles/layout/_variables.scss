@@ -1,0 +1,61 @@
+
+$blue: #4592FF;
+$lightblue:#B4D1E0;
+$title: #262D33;
+$text: #4B5157;
+$green:#3DC47E;
+$purple:#8F79D4;
+
+@mixin btn ($padding: 1rem 2.5rem){
+  background-color: $blue;
+  color:#fff;
+  border-radius:2rem;
+  font-weight: 900;
+  padding: $padding;
+}
+
+@mixin label{
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: bold;
+  padding: .5rem 1.2rem;
+  border-radius: .3rem;
+  background-color: $green;
+}
+
+@mixin title{
+  font-family: 'Roboto Slab', serif;
+  color: $title;
+  font-weight: bold;
+ 
+}
+
+@mixin desktopHd() {
+  @media screen and (max-width: 2560px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media screen and (max-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin tabletsPro() {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablets() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones() {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
