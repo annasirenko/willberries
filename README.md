@@ -1,4 +1,4 @@
-## Willberries- Online Shoppimg
+## Willberries- Online Shopping
 
 ## Technologies used: Bootstrap, Flexbox, Swiper.js
 
