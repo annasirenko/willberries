@@ -1,74 +1,99 @@
-.cards{
-    padding: 5rem 0 6.5rem 0;
-    &__item{
+.cards {
+    padding: 5rem 0 3.5rem 0;
+
+    &__item {
         min-height: 38rem;
         border-radius: 1rem;
-        padding: 6rem 4.6rem 8rem; 
-        &_1{
-            background: #E3E2E3 url('../img/img1.jpg') no-repeat top right;        
-            background-size: cover;  
-                      
+        padding: 6rem 4.6rem 8rem;
+
+        @include phones {
+            min-height: 3rem;
+            padding: 3rem;
+            background-position: left top;
         }
-        &_2{
-            background: #E3E2E3 url('../img/img2.jpg') no-repeat top right;        
-            background-size: cover;                           
-           
+
+        &_1 {
+            background: #E3E2E3 url('../img/img1.jpg') no-repeat top right;
+            background-size: cover;
+
         }
-        &_3{
+
+        &_2 {
+            background: #E3E2E3 url('../img/img2.jpg') no-repeat top right;
+            background-size: cover;
+
+        }
+
+        &_3 {
             padding-top: 3.5rem;
             background: #ccd5e6 url('../img/img3.png') no-repeat top right 10%;
             background-size: contain;
+
+            @include desktop {
+                background-size: cover;
+            }
         }
-        &_4{
+
+        &_4 {
             padding-top: 3.5rem;
             padding-left: 2.58rem;
             background: #FF4F52 url('../img/img4.png') no-repeat top right;
             background-size: contain;
 
+            @include phones {
+                background-position: right top;
+            }
+
         }
+
     }
-    &__title{
+
+    &__title {
         font-size: 2.5rem;
         line-height: 3rem;
         @include title;
         max-width: 22.2rem;
-        &.large{
+
+        &.large {
             font-size: 4rem;
             line-height: 5rem;
             @include title;
-           max-width: 31.2rem;
-           margin: 3.5rem 0 2rem 0;
-           
-        
+            max-width: 31.2rem;
+            margin: 3.5rem 0 2rem 0;
+
+
         }
-        
-        
+
+
     }
-  &__desc{
-      line-height: 2rem;
-      color:$text;
-      margin: 1.5rem 0 2.5rem 0;
-      max-width: 14rem;
-      &.large{
-          max-width: 32rem;
-      }
-    
-  }
-  &__btn{
-      @include btn;
-      padding: 1rem 2rem;
-      &::after{
-          content: '';
-          display: inline-block;
-          background: url('../img/icons/arrow.svg') no-repeat;
-          height: .7rem;
-          width: 1.5rem;
-          margin-left: .8rem;
-      }
-  }
+
+    &__desc {
+        line-height: 2rem;
+        color: $text;
+        margin: 1.5rem 0 2.5rem 0;
+        max-width: 14rem;
+
+        &.large {
+            max-width: 32rem;
+        }
+
+    }
+
+    &__btn {
+        @include btn;
+        padding: 1rem 2rem;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            background: url('../img/icons/arrow.svg') no-repeat;
+            height: .7rem;
+            width: 1.5rem;
+            margin-left: .8rem;
+        }
+    }
 }
 
-.white{
-    color:#fff;
+.white {
+    color: #fff;
 }
-

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,94 +12,100 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/main.css">
 </head>
+
 <body>
     <div class="wrapper">
-        <header class="container">
+        <header class="container px-4 px-md-0">
             <div class="row align-items-center justify-content-between">
-                <div class="col-md-2">
+                <div class="col-lg-2 col-6">
                     <a href="/">
-                    <img src="./img/icons/logo.svg" alt=""></a>
+                        <img src="./img/icons/logo.svg" alt="logo"></a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 d-none d-lg-block">
                     <nav>
-                       <ul class="nav__list d-flex justify-content-around">
-                           <li class="nav__item"><a href="#">Women</a></li>
-                           <li class="nav__item"><a href="#">men</a></li>
-                           <li class="nav__item"><a href="#">goods</a></li>
-                           <li class="nav__item"><a href="#">accessories</a></li>
-                           <li class="nav__item"><a href="#">brands</a></li>
-                           <li class="nav__item"><a href="#">blog</a></li>
-                       </ul>
+                        <ul class="nav__list d-flex justify-content-around">
+                            <li class="nav__item"><a href="#">Women</a></li>
+                            <li class="nav__item"><a href="#">men</a></li>
+                            <li class="nav__item"><a href="#">goods</a></li>
+                            <li class="nav__item"><a href="#">accessories</a></li>
+                            <li class="nav__item"><a href="#">brands</a></li>
+                            <li class="nav__item"><a href="#">blog</a></li>
+                        </ul>
                     </nav>
                 </div>
-                <div class="col-md-2 d-flex justify-content-end">
+                <div class="col-lg-2 col-6 d-flex justify-content-end">
                     <button class="cart__btn">Cart</button>
                 </div>
             </div>
         </header>
-        <section class="slider swiper-container">           
-                <div class="swiper-wrapper">
-                    <div class="slide slide-1 swiper-slide">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4 offset-md-1">
-                                    <span class="label">Bestseller</span>
-                                    <h2 class="slide__title">
-                                        Sweater Choker Neck 
-                                    </h2>
-                                    <p class="slide__desc">
-                                        Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.
-                                    </p>
-                                    <button class="shop__btn"><span>$319</span> Shop now</button>
-                                </div>
-                            </div>
-                        </div>               
-                    </div>
-                    <div class="slide slide-2 swiper-slide">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4 offset-md-1">
-                                    <span class="label">Bestseller</span>
-                                    <h2 class="slide__title">
-                                        Sweater Choker Neck 
-                                    </h2>
-                                    <p class="slide__desc">
-                                        Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.
-                                    </p>
-                                    <button class="shop__btn"><span>$319</span> Shop now</button>
-                                </div>
-                            </div>
-                        </div>               
-                    </div>
-                    <div class="slide slide-3 swiper-slide">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4 offset-md-1">
-                                    <span class="label">Bestseller</span>
-                                    <h2 class="slide__title">
-                                        Sweater Choker Neck 
-                                    </h2>
-                                    <p class="slide__desc">
-                                        Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.
-                                    </p>
-                                    <button class="shop__btn"><span>$319</span> Shop now</button>
-                                </div>
-                            </div>
-                        </div>               
-                    </div>
-                </div>
-                <div class="slider__nav">
+        <section class="slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="slide slide-1 swiper-slide">
                     <div class="container">
-                        <div class="row justify-content-between">
-                            <div class="col-md-1">
-                                <button class="slider__button slider__button--prev"><img src="./img/icons/arrow-left.svg" alt=""><button>
-                            </div>
-                            <div class="col-md-1">
-                               <button class="slider__button slider__button--next"> <img src="./img/icons/arrow-right.svg" alt=""></button>
+                        <div class="row">
+                            <div class="col-lg-4 col-10 offset-lg-1">
+                                <span class="label">Bestseller</span>
+                                <h2 class="slide__title">
+                                    Sweater Choker Neck
+                                </h2>
+                                <p class="slide__desc">
+                                    Women’s pearl basic knit sweater with a round neck. Available in several colours.
+                                    Free shipping to stores.
+                                </p>
+                                <button class="shop__btn"><span>$319</span> Shop now</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="slide slide-2 swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-10 offset-md-1">
+                                <span class="label">Bestseller</span>
+                                <h2 class="slide__title">
+                                    Sweater Choker Neck
+                                </h2>
+                                <p class="slide__desc">
+                                    Women’s pearl basic knit sweater with a round neck. Available in several colours.
+                                    Free shipping to stores.
+                                </p>
+                                <button class="shop__btn"><span>$319</span> Shop now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-3 swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-10 offset-lg-1">
+                                <span class="label">Bestseller</span>
+                                <h2 class="slide__title">
+                                    Sweater Choker Neck
+                                </h2>
+                                <p class="slide__desc">
+                                    Women’s pearl basic knit sweater with a round neck. Available in several colours.
+                                    Free shipping to stores.
+                                </p>
+                                <button class="shop__btn"><span>$319</span> Shop now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__nav">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-1">
+                            <button class="slider__button slider__button--prev"><img src="./img/icons/arrow-left.svg"
+                                    alt="prev-button"><button>
+                        </div>
+                        <div class="col-md-1">
+                            <button class="slider__button slider__button--next"> <img src="./img/icons/arrow-right.svg"
+                                    alt="next-button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="cards">
             <div class="container">
@@ -110,7 +117,7 @@
                             </h3>
                             <p class="cards__desc">Bags & Acsessories & Lingerie & Sportswear &
                                 Beauty & Swimwear</p>
-                                <button class="cards__btn">View all</button>
+                            <button class="cards__btn">View all</button>
                         </div>
                     </div>
                     <div class="col-xl-6 ml-1 mb-4">
@@ -118,28 +125,29 @@
                             <h3 class="cards__title white">
                                 Catch the Sun: Spring Break Styles From $5.99
                             </h3>
-                            <p class="cards__desc white">Sweaters & Hoodies & Puffer Jackets & Coats and Jackets & Knit</p>
-                                <button class="cards__btn">View all</button>
+                            <p class="cards__desc white">Sweaters & Hoodies & Puffer Jackets & Coats and Jackets & Knit
+                            </p>
+                            <button class="cards__btn">View all</button>
                         </div>
                     </div>
-                    <div class="col-xl-9">
+                    <div class="col-xl-9 col-lg-6 mb-4">
                         <div class="cards__item cards__item_3">
                             <span class="label">Bestseller</span>
                             <h3 class="cards__title large">
                                 Poplin Top With Sleeve Bow
                             </h3>
                             <p class="cards__desc large">Poplin top with roll neckline, long sleeves</p>
-                                <button class="shop__btn"><span>$319</span> Shop now</button>
+                            <button class="shop__btn"><span>$319</span> Shop now</button>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-6 mb-4">
                         <div class="cards__item cards__item_4">
-                        <h3 class="cards__title white">
-                            Printed Shirt <br> with a Bow
-                        </h3>
-                        <p class="cards__desc white">Pink/Sky Blue/Yellow</p>
-                        <span class="cards__price white">$129</span>
-                    </div>
+                            <h3 class="cards__title white">
+                                Printed Shirt <br> with a Bow
+                            </h3>
+                            <p class="cards__desc white">Pink/Sky Blue/Yellow</p>
+                            <span class="cards__price white">$129</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,64 +163,64 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-lg-3 col-sm-6">
                         <a href="#" class="arrival__card">
-                           
-                                <span class="arrival__label">New</span>
-                                <img src="./img/arrival1.png" alt="" class="arrival__img">
-                                <div class="arrival__desc">
-                                    <h3 class="arrival__desc--title">Embroidered Hoodie</h3>
-                                    <p class="arrival__desc--subtitle">
-                                        Yellow/Lilac/Fuchsia/Orange
-                                    </p>
-                                    <span class="arrival__desc--price">$89</span>
-                                </div>
-                           
+
+                            <span class="arrival__label">New</span>
+                            <img src="./img/arrival1.png" alt="arrivalImg" class="arrival__img">
+                            <div class="arrival__desc">
+                                <h3 class="arrival__desc--title">Embroidered Hoodie</h3>
+                                <p class="arrival__desc--subtitle">
+                                    Yellow/Lilac/Fuchsia/Orange
+                                </p>
+                                <span class="arrival__desc--price">$89</span>
+                            </div>
+
                         </a>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-sm-6">
                         <a href="#" class="arrival__card">
-                            
-                                <span class="arrival__label">New</span>
-                                <img src="./img/arrival2.png" alt="" class="arrival__img">
-                                <div class="arrival__desc">
-                                    <h3 class="arrival__desc--title">Faded Beach Trousers</h3>
-                                    <p class="arrival__desc--subtitle">
-                                        Navy/Ochre/Black/Khaki
-                                    </p>
-                                    <span class="arrival__desc--price">$139</span>
-                                </div>
-                            
+
+                            <span class="arrival__label">New</span>
+                            <img src="./img/arrival2.png" alt="arrivalImg" class="arrival__img">
+                            <div class="arrival__desc">
+                                <h3 class="arrival__desc--title">Faded Beach Trousers</h3>
+                                <p class="arrival__desc--subtitle">
+                                    Navy/Ochre/Black/Khaki
+                                </p>
+                                <span class="arrival__desc--price">$139</span>
+                            </div>
+
                         </a>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-sm-6">
                         <a href="#" class="arrival__card">
-                           
-                                <span class="arrival__label">New</span>
-                                <img src="./img/arrival3.png" alt="" class="arrival__img">
-                                <div class="arrival__desc">
-                                    <h3 class="arrival__desc--title">Text T-Shirt</h3>
-                                    <p class="arrival__desc--subtitle">
-                                        White
-                                    </p>
-                                    <span class="arrival__desc--price">$59</span>
-                                </div>
-                            
+
+                            <span class="arrival__label">New</span>
+                            <img src="./img/arrival3.png" alt="arrivalImg" class="arrival__img">
+                            <div class="arrival__desc">
+                                <h3 class="arrival__desc--title">Text T-Shirt</h3>
+                                <p class="arrival__desc--subtitle">
+                                    White
+                                </p>
+                                <span class="arrival__desc--price">$59</span>
+                            </div>
+
                         </a>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-sm-6">
                         <a href="#" class="arrival__card">
-                            
-                                <span class="arrival__label">New</span>
-                                <img src="./img/arrival4.png" alt="" class="arrival__img">
-                                <div class="arrival__desc">
-                                    <h3 class="arrival__desc--title">Striped Long Sleeve Shirt</h3>
-                                    <p class="arrival__desc--subtitle">
-                                        Red/Sky Blue
-                                    </p>
-                                    <span class="arrival__desc--price">$9</span>
-                                </div>
-                            
+
+                            <span class="arrival__label">New</span>
+                            <img src="./img/arrival4.png" alt="arrivalImg" class="arrival__img">
+                            <div class="arrival__desc">
+                                <h3 class="arrival__desc--title">Striped Long Sleeve Shirt</h3>
+                                <p class="arrival__desc--subtitle">
+                                    Red/Sky Blue
+                                </p>
+                                <span class="arrival__desc--price">$9</span>
+                            </div>
+
                         </a>
                     </div>
                 </div>
@@ -221,9 +229,9 @@
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-7">
+                    <div class="col-xl-7 mb-4 mb-xl-0">
                         <nav>
-                            <ul class="footer__list d-flex">
+                            <ul class="footer__list d-sm-flex">
                                 <li class="footer__item"><a href="#">Shop</a></li>
                                 <li class="footer__item"><a href="#">About us</a></li>
                                 <li class="footer__item"><a href="#">Careers</a></li>
@@ -233,17 +241,20 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3">
                         <div class="footer__socials d-flex">
                             <p>Follow us</p>
                             <ul class="footer__socials--list d-flex align-items-center">
-                                <li class="footer__socials--item"><a href="#"><img src="./img/icons/fb.svg" alt=""></a></li>
-                                <li class="footer__socials--item"><a href="#"><img src="./img/icons/tw.svg" alt=""></a></li>
-                                <li class="footer__socials--item"><a href="#"><img src="./img/icons/inst.svg" alt=""></a></li>
+                                <li class="footer__socials--item"><a href="#"><img src="./img/icons/fb.svg" alt="fb"></a>
+                                </li>
+                                <li class="footer__socials--item"><a href="#"><img src="./img/icons/tw.svg" alt="twitter"></a>
+                                </li>
+                                <li class="footer__socials--item"><a href="#"><img src="./img/icons/inst.svg"
+                                            alt="inst"></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-2 d-flex justify-content-end">
+                    <div class="col-xl-2 col-lg-3 d-flex justify-content-lg-end mt-4 mt-lg-0">
                         <p class="footer__copyright">&#169; 2019 Universal UI Kit</p>
                     </div>
                 </div>
@@ -251,16 +262,20 @@
                 <div class="row justify-content-between">
                     <div class="col-lg-4 col-sm-9">
                         <ul class="footer__partners d-flex align-items-center">
-                            <li class="footer__partners--item"><a href="#"><img src="./img/icons/visa.svg" alt=""></a></li>
-                            <li class="footer__partners--item"><a href="#"><img src="./img/icons/mastercard.svg" alt=""></a></li>
-                            <li class="footer__partners--item"><a href="#"><img src="./img/icons/paypal.svg" alt=""></a></li>
-                            <li class="footer__partners--item"><a href="#"><img src="./img/icons/bitcoin.svg" alt=""></a></li>
+                            <li class="footer__partners--item"><a href="#"><img src="./img/icons/visa.svg" alt="visa"></a>
+                            </li>
+                            <li class="footer__partners--item"><a href="#"><img src="./img/icons/mastercard.svg"
+                                        alt="mastercard"></a></li>
+                            <li class="footer__partners--item"><a href="#"><img src="./img/icons/paypal.svg" alt="paypal"></a>
+                            </li>
+                            <li class="footer__partners--item"><a href="#"><img src="./img/icons/bitcoin.svg"
+                                        alt="bitcoin"></a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 col-sm-3 d-flex justify-content-end">
+                    <div class="col-lg-2 col-sm-3 d-flex justify-content-end mt-2 mt-sm-0">
                         <a href="#" class="footer__top d-flex align-items-center">
                             <span>Top</span>
-                            <img src="./img/icons/arrow-up.svg" alt="">
+                            <img src="./img/icons/arrow-up.svg" alt="arrow-up">
                         </a>
                     </div>
                 </div>
@@ -270,4 +285,5 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
+
 </html>

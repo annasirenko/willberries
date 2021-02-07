@@ -1,51 +1,86 @@
-.slider{
+.slider {
     position: relative;
-    &__nav{
+
+    &__nav {
         position: absolute;
         top: 50%;
         width: 100%;
         transform: translateY(-50%);
         z-index: 3;
-        & button{
+
+        & button {
             background-color: transparent;
             cursor: pointer;
             border: none;
         }
+
+        @include tablets {
+            display: none;
+        }
     }
 }
 
-.label{
-  @include label;  
+.label {
+    @include label;
 }
 
-.slide{
+.slide {
     padding: 8rem 0 11rem 0;
-    &-1{        
-        background: $lightblue url('../img/slide-1.png') no-repeat center right 24%;
-    }
-    &-2{       
-        background:  #e0b4d3 url('../img/slide-1.png') no-repeat center right 24%;
-    }
-    &-3{
-        background:  #b9e0b4 url('../img/slide-1.png') no-repeat center right 24%;
+
+    &-1 {
+        background: $lightblue url('../img/slide-1.png') no-repeat top right 30%;
+        background-size: contain;
+
+        @include desktop {
+            background-size: cover;
+        }
 
     }
-    &__title{
+
+    &-2 {
+        background: #e0b4d3 url('../img/slide-1.png') no-repeat top right 30%;
+        background-size: contain;
+
+        @include desktop {
+            background-size: cover;
+        }
+
+    }
+
+    &-3 {
+        background: #b9e0b4 url('../img/slide-1.png') no-repeat top right 30%;
+        background-size: contain;
+
+        @include desktop {
+            background-size: cover;
+        }
+
+
+    }
+
+    &__title {
         font-size: 5.5rem;
         line-height: 7rem;
         @include title;
         margin-bottom: 3.3rem;
         margin-top: 3.3rem;
-        
+
+        @include phones {
+            font-size: 3.6rem;
+            line-height: 1.4;
+            margin-bottom: 0;
+        }
+
     }
-    &__desc{
+
+    &__desc {
         font-size: 1.8rem;
         color: $text;
         line-height: 3rem;
-        margin-bottom: 4.8rem
+        margin-bottom: 4.8rem;
+        max-width: 33.5rem;
 
     }
 
-   
-}
 
+}
